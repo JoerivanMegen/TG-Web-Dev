@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    // a)
+    // let objectPet = new Object();
+    // objectPet.name = "Harry"
+    // objectPet.type = "Hond"
+
+    // let literalPet = {
+    //     name : "Karim",
+    //     type : "Kat"
+    // }
+
+    function Pet(name, type){
+        this.name = name
+        this.type = type
+    }
+    let functionPet = new Pet("Sandro", "Schildpad");
+
+    // let singletonPet = new function() {
+    //     this.name = "Shaun"
+    //     this.type = "Schaap"
+    // }
+
+    class Person {
+        constructor(name, type){
+            this.name = "Karel"
+            this.type = "Kanarie"
+        }
+        writeBadCode(){
+            console.log("Oeps, foutje!")
+        }
+    }
+    let classPet = new Person("Karel", "Kanarie")
+
+    
+
+   
+    // console.log(objectPet)
+    // console.log(literalPet)
+    console.log(functionPet)
+    // console.log(singletonPet)
+    console.log(classPet)
+
+    // b)
+    // let hond = Object.create(objectPet);
+    // hond.name = "Harry";
+    // hond.type = "Hond";
+    // console.log(hond)
+
+    // let kat = Object.create(literalPet);
+    // kat.name = "Karim";
+    // kat.type = "Kat";
+    // console.log(kat)
+
+    let schildpad = Object.create(functionPet);
+    schildpad.name = "Sandro";
+    schildpad.type = "Schildpad";
+    console.log(schildpad)
+
+    // let schaap = Object.create(singletonPet);
+    // schaap.name = "Shaun";
+    // schaap.type = "Schaap";
+    // console.log(schaap)
+
+    let kanarie = Object.create(classPet);
+    kanarie.name = "Karel";
+    kanarie.type = "Kanarie";
+    console.log(kanarie)
+
+    //in Object, the proto gets changed to Person or Pet in these cases.
+    //object distinguishes the type of proto depending on the variable's proto.
+
+    // function Person(name, age){
+    //     this.name = name;
+    //     this.age = age;
+    // } 
+    // let karel = new Person ("Karel", 8)
+    // let harold = new Person("Harold", 32)
+    // let kees = new Person("Kees", 54)
+    // let sandra = new Person("Sandra", 42)
+    // let brian = new Person("Brian", 23)
+    // let laura = new Person("Laura", 38)
+    // let angelo = new Person("Angelo", 26)
+    // let giuseppe = new Person("Giuseppe", 83)
+    // let erik = new Person("Erik", 67)
+
+    // let arrayPersons = [karel,harold,kees,sandra,brian,laura,angelo,giuseppe,erik]
+
+    
+
+
+    // arrayPersons.sort((a,b)=>{
+    //     if (a.age>b.age){
+    //         return 1
+    //     } else{
+    //     return -1
+    //     }
+    // }    
+    // )
+    // console.log(arrayPersons)
+</script>
+
+</body>
+</html>

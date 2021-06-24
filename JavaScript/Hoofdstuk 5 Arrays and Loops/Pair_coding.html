@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //fibonacci
+//         let series = [0, 1]
+// for (i=0; i<=3999997; i++) {
+//     nextNumber = series[i] + series[i+1]
+//         series.push(nextNumber)
+// }
+// // console.log(series)
+
+// // function evenFibonacci(series) {
+// //     if (series[0] % 2 ===0){
+// //         return console.log(series[0])
+// //     }
+    
+// // }
+
+// let evenFibonacci = []
+
+// for (j=0; j<series.length; j++) {
+//     if(series[j] % 2 === 0 && series[j] <= 4000000) {
+//         evenFibonacci.push(series[j])
+//     }
+// }
+
+// console.log(evenFibonacci)
+
+let series = [0, 1]
+
+
+for (i=0; i<50; i++) {
+    nextNumber = series[i] + series[i+1]
+    series.push(nextNumber)
+}
+console.log(series)
+
+let evenFibonacci = []
+
+for (j=0; j<series.length; j++) {
+    if(series[j] % 2 === 0 && series[j] <= 4000000) {
+        evenFibonacci.push(series[j])
+    }
+}
+
+const sum = evenFibonacci.reduce((a, b) => a + b, 0);
+console.log(sum)
+
+
+
+    </script>
+    
+</body>
+</html>

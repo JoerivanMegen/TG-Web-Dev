@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="randomNumber()"> Click Here For Random Number
+        <!--
+        Opdracht 4.3a 
+        Maak een functie randomNumber() en verbindt die aan een button. Zorg dat de functie Math.random() in de console logt. 
+        Wat merk je op als je deze meerdere keren gebruikt?
+
+            Wat mij opvalt aan deze opdracht is dat je iedere keer een nieuw willekeurig nummer krijgt tussen 0 en 0.999999999999999.
+
+        Opdracht 4.3b
+        Verander je functie nu dat hij een parameter x gebruikt, en zorg dat hij het volgende in je console logt: Math.floor(Math.random() * x). 
+        Test nu je functie met verschillende waardes voor x. Valt iets je op?
+
+            Ik krijg nu hele nummers door Math.floor en de x waarde geeft nu het maximale limiet aan, dus de nieuwe schaal is dan:
+            randomNumber() >=0 && < x 
+
+        Opdracht 4.3c
+        Er zijn nog 2 belangrijke Math methods die handig zijn om te kennen. 
+        Onderzoek wat Math.min() en Math.max() doen. Kan je van beide al een voorbeeld geven?
+
+            Math.min() geeft aan welke waarde uit een aantal waardes het laagste is. 
+            Math.max() doet het tegenovergestelde en geeft aan welke waarde in bijvoorbeeld een array het hoogst is.
+        -->
+
+    </button>
+
+    <script>
+    let x = 20    
+        function randomNumber(){
+            console.log(Math.floor(Math.random() * x));
+        }
+
+    </script>
+</body>
+</html>

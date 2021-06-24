@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const dutchSports = ["Voetbal", "Hockey", "Schaatsen"];
+        //a)
+        // for (let i=0; i < dutchSports.length; i++) {
+        //     console.log(dutchSports[i])
+        // }
+
+        //b)
+        //for...in loop
+        // for (let index in dutchSports){
+        //     console.log(index)
+        // }
+
+        // //for...of loop
+        // for (let items of dutchSports){
+        //     console.log(items)
+        // }
+
+        //c)
+        // for (i=0; i<=10; i++){
+        //     console.log(i*2)
+        // }
+
+        // //Better way to do it below
+
+        // let numberArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+        // let evenNumbers = [];
+
+        // for (i=0; i<=numberArray.length; i++){
+        //     if (numberArray[i] % 2 === 0){  
+        //         evenNumbers.push(numberArray[i])
+        //     }
+        // }
+        // console.log(evenNumbers)
+
+        //d, e & f
+
+// loop nested in loop nested in loop
+        // for (let i=0; i<=10; i++){
+        //     for (let j=0; j<=20; j++){
+        //         if (j % 2 ===0){
+        //             for (let k=0; k<=30; k++){
+        //                 if (k % 3 ===0){
+        //                     console.log(i, j, k)
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+
+// 3 loops nested in one loop
+        // for (let loopOne = 0; loopOne <=3; loopOne++){
+        //     for (i = 1; i <= 10; i++){
+        //         console.log(i)
+        //     }
+        //     for (j = 2; j <= 20; j++){
+        //         if (j % 2 === 0){
+        //             console.log(j)
+        //         }
+        //     }
+        //     for (k = 3; k <= 30; k++){
+        //         if (k % 3 === 0){
+        //             console.log(k)
+        //         }
+        //     }
+        // }
+
+        // g) Fibonacci
+
+        // let start0 = 0; //het eerste getal in de som om de reeks op gang te brengen
+        // let start1 = 1; //het tweede getal in de eerste som om de reeks op gang te brengen
+        // let fibonacci; //volgende nummer in de fibonacci reeks
+
+        // for (i=1; i<=50; i++){
+        //     fibonacci = start0+start1; // het volgende cijfer is 0 + 1;
+        //     start0 = start1; // nadat het volgende cijfer is berekend, wordt 0 1, omdat 0 niet meer in de som hoort;
+        //     start1 = fibonacci; // daarna wordt 1 het volgende berekende getal, en daarna wordt de loop opnieuw uitgevoerd met de nieuwe data.
+        //     console.log(fibonacci)
+        // }
+
+        // h) Bubblesort
+        let arrayBubble = [2,7,5,10,4,9,3,1,8,6]; 
+
+        function bubbleSort(array) {
+            let trueFalse;
+            let n = array.length;
+            let x = array;
+
+            do {
+                trueFalse = false;
+                for (let i=0; i < n; i++){
+                    if (x[i] > x[i+1]){  //als de waarde van x[i] (index cijfer in array) groter is dan de waarde in het volgende indexnummer:
+                        let temp = x[i]; // er komt een lege variable in de array terecht, om het getal van de array tijdelijk op te vangen tijdens de verplaatsing. 
+                        x[i] = x[i+1]; // Het eerste getal (dat hoger was dan het volgende getal) neemt nu de volgende index plaats in de array over.
+                        x[i+1] = temp; // het lagere getal dat een plaatsje lager moet, wordt nu verplaatst naar de locatie (indexnummer) voor de oorsponkelijk locatie.
+                        trueFalse = true; // deze zorgt ervoor dat de while in regel 109 geactiveerd wordt of niet.
+                    }
+                }
+            n++;}
+            while (trueFalse);
+            return array;
+        }
+        console.log(bubbleSort([2,7,5,10,4,9,3,1,8,6,34,657,14,63,7,75,1,6,7]))
+        
+        
+    </script>
+</body>
+</html>

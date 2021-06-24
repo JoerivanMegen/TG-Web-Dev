@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- Opdracht 3.1 a & b:
+Conditions werken erg vaak met operators. Om goed met conditions te kunnen werken, moet je operators echt goed begrijpen. Daarom onderzoeken we ze hier nogmaals:
+
+Wat is het verschil tussen == en ===?
+== betekent "equal to" in een logical situatie. === betekent dat niet alleen de value gelijk moet zijn, het betekent ook dat het type hetzelfde moet zijn. Als de value bij voor 3 is, en in de variabele wordt aangegeven als een nummer, en in de case als een string, dan is het resultaat bij == true en bij === false.
+
+Wat is het verschil tussen > en >=? En tussen < en <=? 
+> betekent "groter dan", >= betekent "groter dan of gelijk aan". < en <= betekenen respectievelijk het tegenovergestelde. "kleiner dan" en "kleiner dan of gelijk aan".
+-->
+
+
+
+<script>
+    // Opdracht 3.1c
+    // let x = 4;
+    // let y = 8;
+    // if (x==4 && y==8){
+    //     console.log("Lekker bezig jong!")
+    // }
+
+    // Opdracht 3.1d
+    // let x = 4;
+    // let y = 8;
+    // if (x==4 || y==8){
+    //     console.log("Lekker bezig jong!")
+    // }
+
+    
+    // let y = 8;
+    // if (x>=5 || y>=9){
+    //     console.log("Dit klopt niet!")
+    // }
+    // else{
+    //     console.log("Lekker bezig jong!")
+    // }
+
+    // Schrijf voor de volgende opdrachten 1 If/Else die 1 variabele waarde controleert, en zorg voor het volgende:
+
+    // Log het in je console als de waarde groter dan 5 EN kleiner dan 10 is.
+    // Zo niet, log dan in je console als de waarde 11 of groter EN 20 of kleiner is.
+    // Zo niet, log dan in je console als de waarde 21 of 23 is.
+    // Zo niet, log dan in je console als de waarde kleiner dan 35 OF tussen de 40 en 45 is.
+    // Test of je bij alle uitkomsten kan komen. Verandert er iets als je alle If/Else omzet in aparte If blokken?
+
+    //let x=5;
+
+    // if (x > 5 && x < 10){
+    //     console.log("Tussen 5 en 10")
+    // } else if (x >= 11 && x <= 20) {
+    //     console.log("11 tot en met 20")
+    // } else if (x == 21 || x == 23) {
+    //     console.log("Het getal is 21 of 23")
+    // } else if (x < 35 || x >= 40 && x <= 45){
+    //     console.log("Het getal is lager dan 6, of 22, of tussen 23 en 35, of tussen 40 en 45.")
+    // } else {
+    //     console.log("FALSE BWOI")
+    // }
+
+    // Opdracht 3.2
+    // Schrijf een If/Else blok die een eigen variabele controleert:
+    // Gelijk aan 3?
+    // Groter dan 4?
+    // Groter dan 11?
+    // Kleiner dan 3?
+
+    // if (x==3){
+    //     console.log("Het nummer is 3")
+    // }
+    //   else if (x > 11){
+    //     console.log("Het nummer is groter dan 11")
+    // } else if (x > 4){
+    //     console.log("Het nummer is groter dan 4")
+    // }  else if (x < 3){
+    //     console.log("Het nummer is lager dan 3")
+    // } else {
+    //     console.log("FOH BWOI")
+    // }
+    // Test je variabele met 2, 3, 4, 5 en 20. Gebeurt er iets onverwachts?
+    // De condition voor hoger dan 11 moet voor die van 4 staan, anders wordt 20 bijvoorbeeld herkent in de hoger dan 4 categorie.
+    // Aangezien de volgorde ertoe doet in JavaScript, is dit de beste manier om zulke foutjes te voorkomen.
+
+    // if (x==01){
+    //     console.log("januari")
+    // } else if (x==02){
+    //     console.log("februari")
+    // } else if (x==03){
+    //     console.log("maart")
+    // } else if (x==04){
+    //     console.log("april")
+    // } else if (x==05){
+    //     console.log("mei")
+    // } else if (x==06){
+    //     console.log("juni")
+    // } else if (x==07){
+    //     console.log("juli")
+    // } else if (x==08){
+    //     console.log("augustus")
+    // } else if (x==09){
+    //     console.log("september")
+    // } else if (x==10){
+    //     console.log("oktober")
+    // } else if (x==11){
+    //     console.log("november")
+    // } else if (x==12){
+    //     console.log("december")
+    // } else {
+    //     console.log("Dit is geen geldige maand!")
+    // }
+
+    // let x = 20;
+
+    // switch (x){
+    //     case 0:
+    //         console.log("januari");
+    //         break;
+    //     case 1:
+    //         console.log("februari");
+    //         break;
+    //     case 2:
+    //         console.log("maart");
+    //         break;
+    //     case 3:
+    //         console.log("april");
+    //         break;
+    //     case 4:
+    //         console.log("mei");
+    //         break;
+    //     case 5:
+    //         console.log("juni");
+    //         break;
+    //     case 6:
+    //         console.log("juli");
+    //         break;
+    //     case 7:
+    //         console.log("augustus");
+    //         break;
+    //     case 8:
+    //         console.log("september");
+    //         break;
+    //     case 9:
+    //         console.log("oktober");
+    //         break;
+    //     case 10:
+    //         console.log("november");
+    //         break;
+    //     case 11:
+    //         console.log("december");
+    //         break;
+    //     default:
+    //         console.log("Dit is geen geldige maand!");
+    // }
+
+
+    // let x=0;
+    // let results;
+    //  (x<=4 && x>=0) ? results=2 : results=5;
+    // console.log(results)
+    
+</script>
+
+    
+</body>
+</html>

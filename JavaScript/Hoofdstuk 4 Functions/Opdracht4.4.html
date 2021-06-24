@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+Schrijf een functie waar je een naam aan mee kan geven. Laat de naam vergelijken met de namen van mensen in je groepje. 
+Wanneer je functie de naam wel/niet herkent moet dat als boodschap teruggegeven worden.
+
+Schrijf een 2e functie die de eerste functie aanroept, en vervolgens de teruggegeven boodschap in een div element op je pagina toont. 
+Denk aan de DOM methods!
+
+Schrijf nu het bovenstaande nogmaals, maar gebruik dit keer Arrow Functions. 
+Als het niet overal lukt is dat niet erg! 
+-->
+<h1>Opdracht 4.4</h1>
+<br><br>
+<input type="text" id="input">
+<br>
+<small>Dit tekstvak is <br> hoofdletter-gevoelig</small><br>
+<button onclick="printAnswer()" style="border-radius: 10%; padding: 10px; border: none; background-color:lightseagreen; color: white;" id="buttonGroup">Click Here To <br> Check Group 1</button>
+<br>
+
+<br><br>
+<div id="output"></div><br>
+
+<script>
+let textBox = document.getElementById("input");
+let submitBtn = document.getElementById("buttonGroup");
+
+
+function checkAnswer(){
+    switch (textBox.value){
+        case "Joeri":
+        case "Manon":
+        case "Ryno": 
+        case "Elias": 
+            return textBox.value + " zit in groep 1!" 
+            break
+        default:
+            return "Deze persoon is onbekend. :(" 
+
+    }     
+}
+function printAnswer(){
+    document.getElementById("output").innerText = checkAnswer()
+}
+
+</script>
+</body>
+</html>

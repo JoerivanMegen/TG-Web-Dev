@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: green;
+        }
+        div > p{
+            background-color: rgb(153, 189, 153);
+            color: green;
+            width: 80%;
+            margin: auto;
+            padding: 2%;
+        }
+        div > h2{
+            color: rgb(153, 189, 153);
+            margin-left: 10%;
+        }
+        div > hr{
+            border: 0.5px ridge rgb(153, 189, 153);
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h2><b>Opdracht 1.1</b></h2>
+        <hr>
+        <div>
+        <p id="javaTest">
+            wirugpjrepgomslkb;oerb
+                        
+        </p>
+    </div>
+    </div>
+    <script>
+        //1.1a
+        //I predict an error
+        // Error omdat de "let" waarde al is aangegeven en maar één keer toegekend kan worden
+        // let letOefening = "Let tekst!";
+        // let letOefening = "Let tekst twee!";
+        // console.log(letOefening);
+
+        //1.1b
+        //I predict an error
+        //Syntax error, letOefening mag maar één waarde hebben
+        // let letOefening = "tekst een"
+        // console.log(letOefening)
+
+        // let letOefening = "tekst twee"
+        // console.log(letOefening)
+
+        //1.1c
+        //I think this will work, with double output, since the second constOefening is not specified as a "const"-type variable 
+        //or any type of variable for that matter.
+        //prediction wrong: Error caused by double assignment. "const" not necessary to announce variable.
+        //Uncaught TypeError: Assignment to constant variable.
+        // const constOefening = "const tekst een";
+        // console.log(constOefening)
+
+        // constOefening = "const tekst twee";
+        // console.log(constOefening)
+
+        // 1.1d
+        // I think this will give me all lines of text in the log, so "var tekst", "var tekst twee" and "var tekst drie".
+        //My predictions was correct. I got all three lines in my console.
+        // varOefening = "var tekst";
+        // console.log(varOefening)
+
+        // var varOefening = "var tekst twee";
+        // console.log(varOefening)
+
+        // var varOefening = "var tekst drie";
+        // console.log(varOefening)
+
+        //1.2a
+        //De console geeft de volgende output:
+        //This is a STRING with the value: NUMBER.
+        //Dit is niet helemaal wat ik verwacht had, ik had verwacht dat hij tweemaal number zou aangeven, hele vette feature.
+
+        //1.2b
+        //True - Deze geeft mij een error, aangezien true nog geen waarde heeft. Ik verwacht hetzelfde resultaat voor False.
+        //False - Uncaught ReferenceError: False is not defined.
+        //Undefined - Uncaught ReferenceError: Undefined is not defined.
+        //22 - This is a number, with the value: 22. 
+        //22n - This is a bigint, with the value: 22.
+        //Symbol() - Uncaught TypeError: Cannot convert a Symbol value to a string.
+        //null - This is a object, with the value: null.
+        //{} - This is a object, with the value: [object Object].
+        //new Object(); - This is a object, with the value: [object Object].
+        //function calculateSomething() {} - This is a function, with the value: function calculateSomething() {}.
+
+        // let typeQuestion = {}
+        // console.log("This is a " + typeof typeQuestion + ", with the value: " + typeQuestion)
+
+
+        //1.3a
+        //Mijn voorspelling is dat de uitkomst hier 55 zal zijn
+        //Uitkomst is 55
+        // let someNumber = 5;
+        // let anotherNumber = "5";
+        // console.log(someNumber + anotherNumber)
+
+        //1.3b
+        //Mijn voorspelling is dat de uitkomst 10 zal zijn
+        //De uitkomst is 10
+
+        // let someNumber = 5;
+        // let anotherNumber = 5;
+        // console.log(someNumber + anotherNumber)   
+
+        // 1.3c
+
+        // Comparison Operators - JavaScript
+        // ==	equal to
+        // ===	equal value and equal type
+        // !=	not equal
+        // !==	not equal value or not equal type
+        // >	greater than
+        // <	less than
+        // >=	greater than or equal to
+        // <=	less than or equal to
+        // ?	ternary operator
+        
+
+        // Wat gebeurt er wanneer je "+" vervangt met de volgende operators?
+        // == - Voorspelling: True || Uitkomst: true
+        // === - Voorspelling: False || Uitkomst: false
+        // != - Voorspelling: False || Uitkomst: false
+        // !== - Voorspelling: True || Uitkomst: true
+
+        
+        
+        // let someNumber = 5;
+        // let anotherNumber = "5";
+        // console.log(someNumber != anotherNumber)      
+
+        //1.4a
+        // vraag 1: 2 2
+        //1.4b
+        // vraag 3: 1 3
+
+        // 1.4c
+        // let modulo = 24 % 10;
+        // console.log(modulo)
+        // //modulo is 24 divided by how many times 10 fits in 24. which is twice.
+        // // then, the number 20 (which is ten twice) is subtracted from 24, which leaves 4.
+        // // Further example: 55 % 3 = 55/3=8.something. so three fits in 55 8 times. 3*8=54, so 55-54=1.
+        // //the modulo for 55 % 3 = 1
+
+        // let division = 24 / 10;
+        // console.log(division)
+        // //simple division; answer = 2.4
+
+        // 1.4d
+        //False
+
+        // 5 - false 
+        // Boolean - false
+        // false - true
+        // "false" - false
+        // true - false
+        // "true" - false
+        // null - true
+        // undefined - true
+
+        // let someNumber = undefined;
+        // console.log(!someNumber)
+
+
+
+
+
+       
+
+
+    </script>
+</body>
+</html>

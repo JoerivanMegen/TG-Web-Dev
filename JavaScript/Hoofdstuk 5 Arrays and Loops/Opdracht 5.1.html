@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+//     Opdracht 5.1:
+// We oefenen met Arrays.
+
+// a) Maak een array met 1 t/m 10 in willekeurige volgorde en log dit.
+
+let randomArray = [4,2,7,1,8,9,5,10,6,3];
+// console.log(randomArray)
+
+// b) Maak een array met Appel, Aardbei en 3 andere fruitsoorten. Log dit.
+
+// let fruitArray = ["Appel", "Aardbei", "Banaan", "Kers", "Kiwi"]
+// console.log(fruitArray)
+
+// c) Gebruik de indexwaarde om Appel en Aardbei in de console te loggen.
+
+let fruitArray = ["Appel", "Aardbei", "Banaan", "Kers", "Kiwi"]
+// console.log(fruitArray.slice(0,2))
+// de tweede parameter in .slice() geeft het einde van de array aan.
+
+// d) Gebruik Math.random() en Math.floor() om een random indexwaarde van je array met getallen te selecteren. 
+// // Gebruik dat getal vervolgens als index om een fruitsoort te selecteren en log dit.
+// function randomFruits(randomArray) {
+//     return randomArray[Math.floor(Math.random())]
+// }
+// console.log(randomFruits(fruitArray))
+
+// f) Fix de vorige error met modulo en de lengte.
+
+// function randomFruits(randomArray) {
+//     return randomArray[Math.floor(Math.random()*(13%8))]
+// }
+// console.log(randomFruits(fruitArray))
+
+// e) Console log de length property van je fruitsoorten array.
+
+// function randomFruits(randomArray) {
+//     return randomArray[Math.floor(Math.random()*randomArray.length)]
+// }
+// console.log(randomFruits(fruitArray))
+
+// Je kan de index van een item ook gebruiken om de waarde te veranderen.
+
+// g) Verander “Appel” naar “Peer”//
+
+fruitArray[0] = "Peer"
+// console.log(fruitArray)
+
+// console.log(fruitReplace(fruitArray))
+
+//h) Verwissel “Peer” en “Aardbei” van positie. Kan je dit ook al met/zonder Array method?//
+
+let fruitSwitch = fruitArray[0]
+fruitArray[0] = fruitArray[1]
+fruitArray[1] = fruitSwitch
+
+console.log(fruitArray)
+</script>
+
+</body>
+</html>

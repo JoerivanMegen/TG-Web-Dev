@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Opdracht 4.1:</h1>
+    <pre>
+We gaan functies oefenen door bij het begin te beginnen:
+
+a. Maak een button en verbind er een functie aan. Zorg ervoor dat de functie in de console “Hello World” logt.
+
+b. Maak een input element en geef het een bepaald ID. Sla dat ID op in een variabele via document.GetElementByID().
+
+c. Maak een functie met een parameter die deze in de console logt. Geef de ID variabele hier aan mee. Wat zie je in de console?
+
+d. Geef je functie een return waarde, bijvoorbeeld de parameter * 2.
+Maak vervolgens een nieuwe variabele “result”. Roep je functie op met een getal als parameter en wijs de return waarde toe aan “result”. 
+Log de variabele daarna in je console.
+
+    </pre>
+    <button onclick="ButtonHelloWorld()">Click me for Hello World!</button>
+    <br><br>
+    <input onchange="textBox()" id="input" type="text">
+    <script>
+        
+        function ButtonHelloWorld(){
+            console.log("Hello World!")
+        }
+
+        let input = document.getElementById("input");
+        function textBox(){
+            console.log(input.value*2)
+            
+        }
+
+    </script>
+    
+</body>
+</html>

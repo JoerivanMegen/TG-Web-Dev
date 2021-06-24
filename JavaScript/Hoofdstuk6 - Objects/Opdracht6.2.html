@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 6.2a)
+
+        let clubOne = {
+        name: "Roda JC",
+        type: "Voetbalclub",
+        members: 21,
+        contactinfo: {
+            adres: "Roda JC-ring 12",
+            telefoonnummer: "0455421234",
+            contactpersoon: "Mart Remans"
+            }
+        }
+        
+
+        let clubTwo = {
+            name: "Move!",
+            type: "Dansclub",
+            members: 12,
+            contactinfo: {
+                adres: "Blablastraat 23",
+                telefoonnummer: "0455424321",
+                contactpersoon: "Frans Ketmans"
+            }
+        }
+        
+
+        let clubThree = {
+            name: "LA Leakers",
+            type: "Radio",
+            members: 2,
+            contactinfo: {
+                adres: "Blablalaan 12",
+                telefoonnummer: "0455420000",
+                contactpersoon: "Polo Capalot"
+            }
+        }
+
+        let clubFour = {
+            name: "TCLE",
+            type: "Tennisclub",
+            members: 37,
+            contactinfo: {
+                adres: "Blablaweg 23",
+                telefoonnummer: "0455421111",
+                contactpersoon: "James Daniel"
+            }
+        }
+
+        let clubFive = {
+            name: "Bingo",
+            type: "Bingoclub",
+            members: 18,
+            contactinfo: {
+                adres: "Blabladomein 1C",
+                telefoonnummer: "0455422222",
+                contactpersoon: "Jack Harlow"
+            }
+        }
+
+        let clubArray = [clubOne, clubTwo, clubThree, clubFour, clubFive];
+        
+        // Maak een array met 5 verschillende Clubs aan. 
+        // Itereer door het array heen en log voor elke Club de naam, het telefoonnummer en de contactpersoon.
+
+        function LabeledInformation(x){
+            for (i=0; i<x.length; i++){
+                console.log(x[i].name, x[i].contactinfo.telefoonnummer, x[i].contactinfo.contactpersoon)
+            }
+        }
+
+
+        console.log(LabeledInformation(clubArray))
+        // console.log(clubOne.contactinfo.telefoonnummer)
+        // console.log(clubArray[0].name, clubArray[0].contactinfo.telefoonnummer, clubArray[0].contactinfo.contactpersoon)
+    </script>
+</body>
+</html>
