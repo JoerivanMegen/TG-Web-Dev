@@ -1,0 +1,177 @@
+// Cross-shape
+.cross-shape {
+    background: red;
+    height: 100px;
+    position: relative;
+    width: 30px;
+
+    &:after{
+        background-color: inherit;
+        content: "";
+        height: 30px;
+        left: -35px;
+        position: absolute;
+        top: 35px;
+        width: 100px;
+    }
+}
+.target-shape-1{
+    width: 300px;
+    height: 300px;
+    background-color: $primary-color;
+    position: relative;
+    display: flex;
+    border-radius: 50%;
+    top: 50px;
+    left: 25px;
+    .outer{
+        width: 225px;
+        height:225px;
+        background-color: $secondary-accent;
+        position: relative;
+        display: flex;
+        border-radius: 50%; 
+        margin: auto;
+        .outer1{
+            width: 150px;
+            height: 150px;
+            background-color: $accent-color;
+            position: relative;
+            display: flex;
+            border-radius: 50%; 
+            margin: auto;
+            .inner{
+            width: 75px;
+            height: 75px;
+            background-color: white;
+            position: relative;
+            display: flex;
+            border-radius: 50%; 
+            margin: auto;
+            }
+        }
+    }
+}
+.target-shape-2{
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    border-radius: 50%; 
+    left: 200px;
+    .inner{
+        width: 100px;
+        height: 100px;
+        background-color: $secondary-accent;
+        display: flex;
+        position: relative;
+        border-radius: 50%; 
+        margin: auto;
+        .inner1{
+            width: 50px;
+            height: 50px;
+            background-color: $primary-color;
+            display: flex;
+            position: relative;
+            border-radius: 50%; 
+            margin: auto;
+        }
+    }
+}
+.target-shape-3{
+    width: 150px;
+    height: 150px;
+    background-color: $primary-color;
+    position: relative;
+    display: flex;
+    border-radius: 50%; 
+    float: right;
+    right: 30px;
+    top: -280px;
+    z-index: 1;
+    .outer2{
+        width: 100px;
+        height: 100px;
+        background-color: $secondary-accent;
+        display: flex;
+        position: relative;
+        border-radius: 50%; 
+        margin: auto;
+        .inner2{
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            position: relative;
+            border-radius: 50%; 
+            margin: auto;
+            .inner-3{
+                width: 25px;
+                height: 25px;
+                background-color: $accent-color;
+                display: flex;
+                position: relative;
+                border-radius: 50%; 
+                margin: auto;
+            }
+        }
+    }
+}
+.large-target-shape{
+    width: 450px;
+    height: 450px;
+    background-color: $accent-color;
+    position: relative;
+    display: flex;
+    border-radius: 50%; 
+    float: right;
+    right: -120px;
+    top: -200px;
+    z-index: 0;
+    .large-outer{
+        width: 375px;
+        height: 375px;
+        background-color: $primary-color;
+        display: flex;
+        position: relative;
+        border-radius: 50%; 
+        margin: auto;
+        .inner-outer{
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            display: flex;
+            position: relative;
+            border-radius: 50%; 
+            margin: auto;
+            .outer-inner{
+                width: 225px;
+                height: 225px;
+                background-color: $accent-color;
+                display: flex;
+                position: relative;
+                border-radius: 50%; 
+                margin: auto;
+                .large-inner{
+                    width: 150px;
+                    height: 150px;
+                    background-color: $secondary-color;
+                    display: flex;
+                    position: relative;
+                    border-radius: 50%; 
+                    margin: auto;
+                    .bullseye{
+                        width: 75px;
+                        height: 75px;
+                        background-color: $secondary-accent;
+                        display: flex;
+                        position: relative;
+                        border-radius: 50%; 
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}

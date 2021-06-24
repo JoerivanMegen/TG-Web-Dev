@@ -1,0 +1,289 @@
+@import './Assets/colors';
+@import './Assets/fonts';
+@import './Assets/variables';
+@import './Assets/buttons';
+@import './Assets/backgrounds';
+@import './Assets/shapes';
+
+.navbar-nav{
+    .nav-link{
+        color: $accent-color;
+        &:hover{
+            color:$primary-color
+        }
+    }
+}
+body{
+    overflow-x: hidden;
+}
+.navbar{
+    background-color: $bg-primary;
+    border-bottom: ridge $primary-color 3px;
+}
+.background-home{
+    width: 100%;
+    position: absolute;
+}
+.bottom-left{
+    width: 50%;
+    left: 0px;
+    display: flex;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    .cross-one{
+        position: relative;
+        top: 600px;
+        left: 190px;
+        background-color: $primary-color;
+        transform: rotate(10deg);
+    }
+    .cross-two{
+        position:relative;
+        top: 550px;
+        left: 70px;
+        transform: rotate(60deg) scale(0.5);
+        background-color: $accent-color;
+    }
+    .cross-three{
+        position:relative;
+        top: 440px;
+        left: 120px;
+        transform: rotate(73deg) scale(0.4);
+        background-color: $secondary-accent;
+    }
+    .cross-four{
+        position:relative;
+        top: 520px;
+        left: 170px;
+        transform: rotate(134deg) scale(0.7);
+        background-color: $secondary-color;
+    }
+    .cross-five{
+        position:relative;
+        top: 630px;
+        left: -100px;
+        transform: rotate(198deg) scale(1.0);
+        background-color: black;
+    }
+    .cross-six{
+        position:relative;
+        top: 420px;
+        left: -80px;
+        background-color: $primary-color;
+        transform: rotate(230deg) scale(0.65);
+    }
+    .cross-seven{
+        position:relative;
+        top: 320px;
+        left: -25px;
+        background-color: black;
+        transform: rotate(230deg) scale(0.28);
+    }
+}
+.top-right{
+    right: 0px;
+    display: flex;
+    height: auto;
+    position: absolute;
+    .cross-one{
+        position: relative;
+        top: -130px;
+        right: -250px;
+        z-index: -1;
+        background-color: $primary-color;
+        transform: rotate(10deg);
+    }
+    .cross-two{
+        position:relative;
+        top: -100px;
+        right: -20px;
+        transform: rotate(55deg) scale(0.7);
+        background-color: $accent-color;
+    }
+    .cross-three{
+        position:relative;
+        top: 100px;
+        right: -40px;
+        transform: rotate(73deg) scale(0.45);
+        background-color: $accent-color;
+    }
+    .cross-four{
+        position:relative;
+        top: -30px;
+        right: -60px;
+        transform: rotate(149deg) scale(0.7);
+        background-color: $secondary-color;
+    }
+    .cross-five{
+        position:relative;
+        top: 170px;
+        right: -80px;
+        transform: rotate(198deg) scale(1.0);
+        background-color: black;
+    }
+    .cross-six{
+        position:relative;
+        top: -30px;
+        right: 80px;
+        background-color: $secondary-accent;
+        transform: rotate(210deg) scale(0.65);
+    }
+    .cross-seven{
+        position:relative;
+        top: 50px;
+        right: 30px;
+        background-color: $primary-color;
+        transform: rotate(230deg) scale(0.28);
+    }
+    .cross-eight{
+        position:relative;
+        top: 60px;
+        right: 200px;
+        transform: rotate(15deg) scale(0.9);
+        background-color: $primary-color;
+    }
+    .cross-nine{
+        position:relative;
+        top: -30px;
+        right: 300px;
+        transform: rotate(149deg) scale(0.7);
+        background-color: $secondary-color;
+    }
+    .cross-ten{
+        position:relative;
+        top: -100px;
+        right: 400px;
+        transform: rotate(80deg) scale(1.0);
+        background-color: black;
+        z-index: -1;
+    }
+    .cross-eleven{
+        position:relative;
+        top: -30px;
+        right: 30px;
+        background-color: $secondary-accent;
+        transform: rotate(210deg) scale(0.65);
+    }
+    .cross-twelve{
+        position:relative;
+        top: 50px;
+        right: 30px;
+        background-color: $primary-color;
+        transform: rotate(230deg) scale(0.28);
+    }
+
+}
+.image-box-blue{
+    position: relative;
+    background-color: $accent-color;
+    width: 250px;
+    height: 600px;
+    top: 60px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    img{
+        width:250px;
+        height: 250px;
+        position: absolute;
+        border-radius: 50%;
+        border: ridge 3px;
+        left: 250px;
+        top: 80px;
+    }
+    .profile-txt{
+        text-align: right;
+        position: inherit;
+        bottom: 110px;
+        h1{
+            color: white;
+        }
+        p{
+            color: $secondary-accent;
+        }
+    }
+}
+.about-me-txt{
+    width: 600px;
+    height: 325px;
+    background-color: $secondary-accent;
+    z-index: -1;
+    top: 335px;
+    display: flex;
+    .txt-about-me{
+        position: relative;
+        margin-top: 50px;
+    }
+}
+#cv{
+    height: 900px;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+    .cv-gallery{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        float:left;
+        margin: 0 auto;
+        top: 900px;
+        align-self: center;
+        left: 250px;
+        z-index: 6;
+        flex-wrap: wrap;
+        max-width: 900px;
+        .cv-card{
+            width: 250px;
+            height: 350px;
+            background-color: white;
+            box-shadow: 3px 3px 10px 0px;
+            position: relative;
+            margin: 15px;
+            text-align: right;
+            transition-property: ease-in all;
+            transition-duration: 300ms;
+            &:hover{
+                transition-timing-function: ease-out;
+                transition-duration: 300ms;
+                transform: scale(1.1);
+                box-shadow: 6px 6px 10px 0px;
+            }
+            .cv-card-content{
+                margin: auto;
+                margin: 15px;
+            img{
+                width: 220px;
+                position: relative;
+                margin-bottom: 10px;
+                align-self: center;
+            }
+            h3{
+                line-height: 1px;
+            }}
+        }
+    }
+}
+.carousel-container{
+    width: 1000px;
+    position: relative;
+    height: 600px;
+    margin: 100px;
+    display: flex;
+    z-index: 1;
+    top: 100px;
+    left: -50px;
+    justify-content: center;
+}
+.carousel{
+    margin: auto;
+    width: 900px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    img{
+        max-width: 800px;
+        max-height: 600px;
+        margin: auto;
+    }
+}

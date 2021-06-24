@@ -1,0 +1,55 @@
+#projects{
+    width: 100%;
+    height: 800px;
+    background-color: $accent-color;
+    top: 300px;
+    z-index: 3;
+    h2{
+        color: white;
+    }
+    .background-projects{
+        .stripe-one{
+            width: 50px;
+            height: 400px;
+            background-color: white;
+            float: right;
+            position: relative;
+            transform: rotate(135deg);
+            top:-80px;
+            right: 20px;
+            z-index: 2;
+        }
+        .stripe-two{
+            width: 50px;
+            height: 700px;
+            background-color: white;
+            float: right;
+            position: relative;
+            transform: rotate(135deg);
+            top:-120px;
+            right: 50px;
+            z-index: 0;
+        }
+        .stripe-three{
+            width: 50px;
+            height: 700px;
+            background-color: $secondary-color;
+            float: left;
+            position: relative;
+            transform: rotate(135deg);
+            bottom: -230px;
+            right: 50px;
+            z-index: auto;
+        }
+        .stripe-four{
+            width: 50px;
+            height: 750px;
+            background-color: black;
+            float: left;
+            position: relative;
+            transform: rotate(135deg);
+            top: 180px;
+            left: -300px;
+        }
+    }
+}
