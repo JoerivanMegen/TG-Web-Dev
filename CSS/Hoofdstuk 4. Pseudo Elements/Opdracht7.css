@@ -1,0 +1,28 @@
+.ster{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-color: red;
+    top: 50px;
+    left: 50px;
+    transform: rotate(20deg);
+}
+.ster::before{
+    content: '';
+    position: relative;
+    width: 200px;
+    height: 200px;
+    float: left;
+    transform: rotate(25deg);
+    background-color: red;
+}
+.ster::after{
+    content: '';
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    float: right;
+    transform: rotate(55deg);
+    bottom: 200px;
+}

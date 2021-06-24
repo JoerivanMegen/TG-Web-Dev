@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Stack</title>
+    <style>
+        body{
+            color: whitesmoke;
+        }
+        .container{
+            display: flex;
+            height: 250px;
+            position: relative;
+            width: 1000px;
+            margin: 30px;
+        }
+        .cards{
+            display: flex;
+        }
+        .card{
+            width: 150px;
+            height: 220px;
+            text-align: right;
+            background-color: gray;
+            border-radius: 10%;
+            margin: auto;
+            padding: 15px;
+            margin-left: -20px;
+            box-shadow: black -3px 4px 15px 1px;
+            transition: all 100ms ease;
+        }
+        .card:hover ~ .card{
+                color: red;
+                transform: translateX(23px);
+                transition-duration: 100ms;
+        }
+        .card:hover {
+            transform: translateY(-20px);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cards">
+            <div class="card">
+                <p>bla bla bla</p>
+                <h1>bla bla bla</h1>
+                <p>bla bla</p>
+            </div>
+            <div class="card">
+                <p>bla bla bla</p>
+                <h1>bla bla bla</h1>
+                <p>bla bla</p>
+            </div>
+            <div class="card">
+                <p>bla bla bla</p>
+                <h1>bla bla bla</h1>
+                <p>bla bla</p>
+            </div>
+            <div class="card">
+                <p>bla bla bla</p>
+                <h1>bla bla bla</h1>
+                <p>bla bla</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

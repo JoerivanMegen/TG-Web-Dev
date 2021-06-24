@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: teal;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            animation-name: rotation;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0, 1.2, 0, 1);
+            animation-duration: 6s;
+        }
+        @keyframes rotation{
+            0% {transform: rotate(0deg);animation-duration: 1s;}
+            12.5% {transform: rotate(45deg);background-color: rgb(0, 128, 85); border-top-left-radius: 50%;border-bottom-left-radius: 0%; border-bottom-right-radius: 0%; border-top-right-radius: 0%; animation-duration: 500ms;}
+            25% {transform: rotate(90deg);background-color: rgb(172, 164, 51); border-top-left-radius: 50%; border-bottom-left-radius: 0%; border-bottom-right-radius: 0%; border-top-right-radius: 50%; animation-duration: 500ms;}
+            37.5% {transform: rotate(135deg);background-color: rgb(245, 161, 51); border-top-left-radius: 50%; border-bottom-left-radius: 0%; border-bottom-right-radius: 50%; border-top-right-radius: 50%; animation-duration: 500ms;}
+            50% {transform: rotate(180deg);background-color: rgb(255, 0, 0); border-top-left-radius: 50%; border-bottom-left-radius: 50%; border-bottom-right-radius: 50%; border-top-right-radius: 50%; animation-duration: 500ms;}
+            62.5% {transform: rotate(135deg);background-color: rgb(241, 25, 133); border-top-left-radius: 50%; border-bottom-left-radius: 0%; border-bottom-right-radius: 50%; border-top-right-radius: 50%; animation-duration: 500ms;}
+            75% {transform: rotate(90deg);background-color: rgb(200, 13, 238); border-top-left-radius: 50%; border-bottom-left-radius: 0%; border-bottom-right-radius: 0%; border-top-right-radius: 50%; animation-duration: 500ms;}
+            87.5% {transform: rotate(45deg);background-color: rgb(87, 10, 230); border-top-left-radius: 50%; animation-duration: 500ms;}
+            100% {transform: rotate(0deg); background-color: blue; animation-duration: 500ms;}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

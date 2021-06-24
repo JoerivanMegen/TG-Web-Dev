@@ -1,0 +1,53 @@
+@import './Assets/variables';
+@import './Assets/buttons';
+
+
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-container{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    border-radius: 4%/6% ;
+    overflow: hidden;
+    align-items: center;
+    &__images{
+        display: flex;
+        transform: translateX(0);
+        transition: transform 2s;
+        img{
+            width: 100%;
+        }
+    }
+    .panel{
+        position: absolute;
+        background-color: $panel-color;
+        height: 100%;
+        width: 5%;
+        display: flex;  
+        padding: 0;
+        transition: .5s;
+        // transition-property: all .5s ease;
+        &.right{
+        right: 0;
+        z-index: 2;
+        }
+        &.left{
+        left: 0;
+        z-index: 2;
+        }
+        &:hover{
+            background-color: $panel-hover;
+            transition: 0.7s;
+            .button{
+                color: $arrow-hover;
+                transition: 0.3s;
+            }
+        }
+    }
+}

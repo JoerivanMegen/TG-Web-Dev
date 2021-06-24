@@ -1,0 +1,16 @@
+@import './variables';
+.button{
+    border: none;
+    width: 200px;
+    height: 75px;
+    background-color: pink;
+    color: $text-color;
+    &:hover{
+        background-color: purple;
+        color: $hover-text-color;
+        box-shadow: 3px 3px 14px 3px black;
+    }
+    &:focus{
+        border-radius: 25%;
+    }
+}

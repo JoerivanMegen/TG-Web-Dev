@@ -1,0 +1,21 @@
+Opdracht 3
+Er zijn verschillende selectors, bijvoorbeeld;
+type selectors
+descendant selectors
+class selectors
+
+Maak van de bovengenoemde selectors voorbeelden. Geef in je antwoord ook aan wat de voordelen zijn van elke selector.
+
+- Type selectors: 
+    Deze selector verwijst naar een volledig type element. Bijvoorbeeld naar een p element. 
+    Het voordeel hiervan is dat je per direct alle p elementen met dezelfde opmaak kunt aanpassen.
+
+- Descendant selectors:
+    Deze selector verwijst naar alle typen elementen die in een bepaald type element staan. Bijvoorbeeld "div p{"; dit betekent dat alle opmaak in dit CSS gedeelte verwijzen naar p elementen die onder een div vallen.
+    Hiermee kun je dus wat meer gepersonaliseerde styling toevoegen aan je pagina, door onderscheid te maken tussen verschillende lappen content.
+
+- Class selector:
+    Met deze selector verwijs je naar een zelf toegewezen class in je html.
+    Een voorbeeld hiervan is: .classname{...}.
+    Op deze manier kun je heel specifiek elementen aanpassen en zo zeer geraffineerde styling aan je pagina toevoegen.
+

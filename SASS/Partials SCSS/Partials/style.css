@@ -1,0 +1,19 @@
+.button {
+  border: none;
+  width: 200px;
+  height: 75px;
+  background-color: pink;
+  color: white;
+}
+
+.button:hover {
+  background-color: purple;
+  color: #bbbbbb;
+  -webkit-box-shadow: 3px 3px 14px 3px black;
+          box-shadow: 3px 3px 14px 3px black;
+}
+
+.button:focus {
+  border-radius: 25%;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 250px;
+            height: 250px;
+            border: solid 15px black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+        }
+
+        .movingbox {
+            width: 250px;
+            height: 250px;
+            background-color: dodgerblue;
+            display: flex;
+            align-items: center;
+            transition: all 800ms ease;
+            position: absolute;
+            top: 0px;
+            left: 0;
+            z-index: 1;
+        }
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .container:hover .movingbox {
+            /* transform-origin: left bottom; */
+            transform: translate(170px, 170px) rotate(45deg);
+            transition-duration: 800ms;
+        }
+        img:hover {
+            background-color: rgba(62, 196, 167, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"> 
+        <div class="movingbox"></div>
+        <img src="../Hoofdstuk 5. Flexbox/Assets/squidward.gif" alt="Squidward" width="250px"></div>
+    </div>
+</body>
+
+</html>

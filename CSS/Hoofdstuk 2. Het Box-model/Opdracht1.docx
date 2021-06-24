@@ -1,0 +1,8 @@
+Opdracht 1
+Wat zijn de eigenschappen van block boxes en inline boxes?
+
+
+Block boxes zijn boxes die volgens de block regel werken. Dit betekent dat dit het enige element op die regel zal zijn.
+In principe is er dus een break rule voor en na de box.
+
+Een inline box zal op dezelfde regel verschijnen als het voorgaande element.

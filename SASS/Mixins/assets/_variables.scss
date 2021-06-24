@@ -1,0 +1,7 @@
+$primary-color: blue;
+$secondary-color: red;
+
+@mixin imagecheck{
+    width:  (400px - 200px) * 2 ;
+    height: auto;
+}

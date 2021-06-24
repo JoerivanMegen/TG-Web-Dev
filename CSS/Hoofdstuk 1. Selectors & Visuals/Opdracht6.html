@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div > p{
+            background-color: dodgerblue;
+        }
+        section + h2{
+            background-color: dodgerblue;
+        }
+        p ~ span{
+            background-color: dodgerblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Opdracht 6</h1>
+    
+<p>Verder heb je ook nog de volgende selectors:</p>
+<ul>
+    <li>child selectors</li>
+    <li>adjacent selectors</li>
+    <li>general selectors</li>
+</ul>
+
+<p></p>Maak in een aparte html bestand voor elke selector een voorbeeld en maak een link in je antwoord naar dat html bestand. Geef in je antwoord ook aan wat de voordelen zijn van elk selector.</p>
+<div>
+    <h2>Child Selectors</h2>
+    <p>Child selectors zijn een onderverdeeld onderdeel van descendant selectors.</p>
+    <p>In principe verwijst de child selector ook naar een selector in een andere selector, bij voorbeeld naar een p die onder een div is ingebracht.</p>
+    <section>
+        <p>Het verschil met een normale descendant is echter dat de child selector alleen verwijst naar de tag die aan de vereiste voldoet in je code. Deze paragraaf staat namelijk in een section in de div. Daardoor voldoet die niet aan de child selector criteria. Het pad voor deze paragraaf zou div>section>p zijn.</p>
+    </section>
+    <p>Als je bijvoorbeeld meerdere p tags in een div aanbrengt, is de child selector erg handig als je alleen specifieke opmaak wilt toevoegen aan die specifieke paragraaf.</p>
+</div>
+<p>Aangezien deze paragraaf buiten de div valt, zal die niet de blauwe achtergrond krijgen.</p>
+<br><br><br>
+<div class="adj">
+    <section>
+        <h2>Adjacent Selectors</h2>
+        <p>De adjacent selector implementeert de geselecteerde opmaak in het eerstvolgende element. </p>
+        <p>Zo zul je zien dat de eerste paragraaf na dit stukje blauw wordt vanwege de adjacent styling.</p>
+    </section>  
+    <p>Deze wordt gekleurd, omdat dit element volgt na section + p.</p>
+</div>
+<br><br><br>
+<div>
+    <section>
+    <h2>General Sibling Selectors</h2>
+    <span>Dit is een span.</span>
+    <p>Bij de general sibling selector worden alle geselecteerde elementen opgemaakt volgens je CSS, na het eerder genoemde element.</p>
+    <p>Bijvoorbeeld, in dit geval gebruik ik p ~ span</p>
+    <span>dit is ook een span die een p volgt, daarom is die blauw.</span>
+    <p>dit is weer een p. Die krijgt dus geen opmaak.</p>
+    <span>Dit is wel weer een span!</span>
+</section>
+</div>
+</body>
+</html>

@@ -1,0 +1,306 @@
+Onderdeel 2 - HTML Elementen 
+
+Recap dag 1
+
+Gisteren hebben we kennis gemaakt met de basics van HTML en enkele HTML elementen. We zullen nog de belangrijkste onderdelen herhalen en de gemaakte opdrachten bespreken. We zullen nog de onderwerpen links, afbeeldingen, video’s en audio los behandelen.
+
+Links
+
+HTML links zijn hyperlinks. Dit betekent dat de gebruiker door middel van een klik van het ene document naar een ander document toe kan springen. Standaard verandert de muispijl ook naar een muishand. Een link hoeft niet altijd tekst te zijn, het kan ook een afbeelding zijn. 
+
+<a href="www.techgrounds.nl">link text</a>
+
+De belangrijkste attribuut van een a element is de href attribuut. Dit definieert de bestemming van de link. De tekst tussen de <a> </a> tags is het enige onderdeel dat zichtbaar is voor de gebruiker
+
+Een veelgebruikte attribuut voor de link tag is de target attribuut. Met de target attribuut kun je specificeren op welke manieren de webbrowser de link zal openen. Als je deze attribuut niet definieert zal de browser de webpagina openen in de huidige browser window. Als je dit wilt wijzigen kun je de target attribuut aanpassen. Hieronder enkele voorbeelden met hoe je dit doet en de resultaten hiervan:
+
+
+<a href="www.techgrounds.nl" target="_self">link text</a>
+Opent het document in de huidige browser. Niet definiëren en op deze manier definiëren bereik je dus hetzelfde mee.
+<a href="www.techgrounds.nl" target="_blank">link text</a>
+Opent het document in een nieuwe window of tabblad.
+<a href="www.techgrounds.nl" target="_parent">link text</a>
+Opent het document in het parent frame. Het parent frame is de frame dat om het huidige frame heen zit. 
+<a href="www.techgrounds.nl" target="_top">link text</a>
+Top zorgt ervoor de de webpagina zal worden ingeladen in de body van je huidige pagina.
+
+Je kan ook naar een onderdeel van je webpagina linken en door middel van een klik op de link automatisch springen naar een ander onderdeel van je webpagina.Dit is hoe navigatiebalken werken en dit onderdeel zal verder toegelicht worden in het onderdeel lijsten en navigatiebalken.
+
+
+Media
+
+Online kan Multimedia teruggevonden in verschillende vormen. Multimedia op een website is geluid, muziek, video’s, films, animaties en nog veel meer. Voor elk multimedia formaat zijn er bestandssoorten die ondersteund worden door de webbrowser. Enkele veel voorkomende zijn: MP3, WebM, Wav en MP4.
+
+<video>
+
+De <video> tag wordt gebruikt om een video weer te geven op een website. De video tag is een container tag waarin je een <source> element definieert waar je het video formaat definieert. Als je tekst toevoegt tussen de video tag zal die tekst weergegeven worden als de browser het video element niet ondersteunt.
+
+
+Attributen:
+
+autoplay    
+Wordt gebruikt om de video automatisch te starten
+
+
+width & height   
+Wordt gebruikt om de width en height vast te stellen. Als dit niet wordt vastgesteld kan de webpagina na het inladen van de video de content omlaag duwen.
+
+controls
+Wordt gebruikt in de video tag om een afspeel, pauzeer en volume knop toe te voegen.
+
+
+<source>
+
+src="movie.mp4" - Definieert welke videobestand je wilt gebruiken,
+type="video/mp4" - Definieert het soort type bestand.
+
+<audio>
+
+Wordt gebruikt om audio af te spelen op een website door middel van de source tag.
+Heeft dezelfde attributen als video behalve width & height.
+
+
+<iframe>
+
+De eenvoudigste manier om video’s af te spelen in HTML is om Youtube te gebruiken. Hier kunnen we een iframe voor gebruiken. Een iframe, een inline frame, is een HTML document of webpagina dat in een ander HTML document geplaatst is. Je kan dit zien als een kleine doos waarin we een andere pagina kunnen weergeven. Voorbeelden hiervan zijn Youtube video’s op andere websites en advertenties. Hier worden in werkelijkheid een onderdeel van een andere webpagina weergegeven op jouw website. 
+
+
+title
+
+
+Wordt gebruikt voor screenreaders om te zien wat de content van een iframe is.
+
+width & height   
+Wordt gebruikt om de width en height vast te stellen van de iframe. Standaard worden pixels gebruikt.
+
+style
+Wordt gebruikt om de styling aan te passen. Zo kan je de height en width hier exact aanpassen, border verwijderen, positioneren en meer.
+
+name 
+Zie onderstaand voorbeeld. Hier hebben we in de link tag als target de naam van ons iframe meegegeven. Dit zorgt ervoor dat de iframe gewijzigd wordt naar de link zijn href zodra hierop geklikt wordt. De link wordt dus geopend in onze iframe.
+
+
+<iframe src="content.htm" name="iframe_a" title="Iframe Example"></iframe>
+
+<p><a href="www.techgrounds.nl" target="iframe_a">Techgrounds.nl</a></p>
+
+Youtube
+Om een Youtube video weer te geven moet je naar de video navigeren die je wilt weergeven, op delen klikken en dan op embed klikken. Youtube genereert automatisch de iframe code die hiervoor nodig is. De attributen kan je opzoeken en wijzigen tot je het resultaat bereikt hebt dat je wilt bereiken.
+
+Section
+
+Een <section> representeert een alleenstaande sectie binnen een HTML document. Vaak heeft een sectie zijn eigen heading. Door het gebruik maken van secties in je HTML document kan je je webpagina opdelen in verschillende onderdelen. Hieronder volgt een voorbeeld:
+
+<section>
+<h2>WWF History</h2>
+<p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+</section>
+
+<section>
+<h2>WWF's Symbol</h2>
+<p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+</section>
+
+Een sectie kan gezien worden als het opdelen van een webpagina en doen we per nieuw onderwerp of onderdeel. Het opdelen van een webpagina in onderdelen in secties geeft dus aan dat er een nieuw onderdeel begint. 
+
+Div
+
+Door middel van het gebruiken van een div kan een website ook opgedeeld worden. Een div verschilt van een section in dat deze opdeling geen semantic betekenis hoeft te hebben. De opdeling wordt vaak opgesteld om onderdelen van de website te stylen of te manipuleren via JavaScript.  Hieronder volgt een voorbeeld
+
+<div class="color-blue">
+  <h2>This is a heading in a div element</h2>
+  <p>This is some text in a div element.</p>
+</div>
+
+<div class="color-black">
+  <h2>This is a heading in a div element</h2>
+  <p>This is some text in a div element.</p>
+</div>
+
+
+Nesting, lijsten en navigatiebalken
+
+Nesting
+
+
+HTML elementen kunnen genest worden. Elk HTML document bestaat uit geneste elementen. Hieronder volgt een voorbeeld van een genest HTML document:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+
+Geneste elementen zijn elementen die in elkaar zitten en de definitie komt vanuit het Engelse woord nesting ( objecten die in elkaar geplaatst kunnen worden ). Zo zie je dat tussen het container element <body> het element <h1> geplaatst is. Dit is een voorbeeld van nesting.
+
+Lijsten
+Voor het onderdeel lijsten hebben we 3 soorten lijsten. een ul ( unordered list) , een ol ( ordered list ) en een li ( een lijst element ).
+
+Als eerst definiëren we wat voor soort lijst we willen, hier hebben we twee container element keuzes voor; een ul of een ol. Vervolgens kunnen we in dit element een li plaatsen/nesten. Hier volgen twee voorbeelden met de bijbehorende uitwerkingen:
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+
+
+------------------
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+
+<ol>
+
+  <li>Coffee</li>
+  <ol>
+  	<li>Coffe wrong</li>
+    	<li>Coffe cappuchino</li>
+   </ol>
+  
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+Navigatiebalken:
+
+In HTML is er een <nav> tag dat gebruikt kan worden als een container tag voor een groep navigation links. Hieronder volgt een voorbeeld:
+
+<nav>
+  <a href="/html/">HTML</a> |
+  <a href="/css/">CSS</a> |
+  <a href="/js/">JavaScript</a> |
+  <a href="/python/">Python</a>
+</nav>
+
+
+
+De href in de link tag stuurt je door naar de baselink + href redirect. Wat hiermee bedoelt wordt is dat als je op www.techgrounds.nl zit en je op de eerste link zou klikken je terecht zou komen op www.techgrounds.nl/html .
+
+Het is niet gebruikelijk om navigatiebalken op deze wijze op te zetten. Voor screenreaders en slechtzienden kan dit element gebruikt worden om te besluiten of ze dit elementen willen renderen of niet. Dit element is niet essentieel voor veel webpagina’s en screenreaders kunnen dit element dus weglaten.
+
+Het is wel gebruikelijk om een navigatiebalk op te zetten door gebruik te maken van een lijst. Een navigatiebalk is simpelweg een lijst van links. Hieronder volgt een voorbeeld:
+
+<ul>
+  <li><a href="/home">Home</a></li>
+  <li><a href="/news">News</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+
+
+Dit is hoe een standaard navigatiebalk opgezet wordt. Door middel van styling, CSS dat we in een later onderdeel zullen behandelen, kan je deze lijst stylen tot een mooie navigatiebalk:
+
+
+Opdrachten
+
+
+Image, audio & video
+
+Het plaatsen van foto's op een website is een belangrijke toevoeging voor velen. Zo bestaan de meeste websites uit een grote collectie van foto's. Vaak kun je logo's, teamfoto's of andere soorten afbeeldingen terugvinden op een website. Het stylen van de afbeeldingen komt later in het onderdeel CSS aanbod.
+
+Bij het inladen van een bestand is het noodzakelijk om de locatie van het bestand aan te geven. Dit kan op 2 manieren:
+
+
+Absolute path
+Een absolute path omvat een volledige URL naar de afbeelding. Dit betekent dat de afbeelding van over het gehele internet gevonden kan worden.
+Relative path
+Een relative path houdt in dat de afbeelding van binnen het root domein komt. Hiervoor hoef je alleen de informatie na de / in te vullen van de URL.
+Wat houden deze 2 paths in?
+Een image element is voor het inladen van een afbeelding. Afbeeldingen kunnen van verschillende formaat zijn. Bijvoorbeeld, een afbeelding kan een JPG formaat zijn.
+
+
+ Zoek uit welke formaat afbeeldingen er nog meer kan zijn.
+APNG	Animated Portable Network Graphics	.apng
+GIF	Graphics Interchange Format		.gif
+ICO	Microsoft Icon				.ico, .cur
+JPEG	Joint Photographic Expert Group image	.jpg, .jpeg, .jfif, .pjpeg, .pjp
+PNG	Portable Network Graphics			.png
+SVG	Scalable Vector Graphics			.svg
+
+
+
+Een afbeelding tonen is afhankelijk van of de browser het ondersteunt. 
+
+Zoek uit welke browsers er zijn en maak een lijst van je antwoord.
+<ul>
+  <li>Google Chrome</li>
+  <li>Internet Explorer</li>
+  <li>Mozilla Firefox</li>
+  <li>Safari</li>
+  <li>Opera</li>
+</ul>
+
+
+Onderzoek hoe het plaatsen van een foto gedaan wordt en plaats deze boven en onderaan je website door zowel gebruik te maken van de absolute path en relative path.
+
+<img src="https://techgrounds.nl/wp-content/uploads/2020/11/tg-logo-768x135.png" alt="TechGrounds Logo">
+<img style="vertical-align: bottom;" src="TechGrounds Logo.png" alt="TechGrounds Logo">
+
+
+ 
+
+Aan de img element kan je ook de alt attribute gebruiken. 
+
+Wat houdt de alt attribute in? En waarom is het handig om de alt attribuut te gebruiken?
+
+De alt attribute geeft een waarde aan wanneer de foto niet geladen kan worden. Zo kun je bijvoorbeeld een stukje tekst plaatsen in het geval dat dit voorkomt. Op die manier weet de bezoeker van je pagina dat hier een foto zou moeten staan en je zou kunnen beschrijven wat er normaal gesproken zou staan.
+
+
+
+In de sound folder staat een explosion.mp3 bestand. 
+
+Laadt dit bestand in als een audio op het scherm.
+
+check
+
+Extra: Maak het leuker door de audio op repeat te zetten.
+
+Tip: gebruik controls attribute om audio af te spelen.
+
+
+Een audio bestand heeft verschillende formaten. Niet alle formaten worden ondersteund door de browser. Hiervoor is een oplossing voor. 
+
+Speel een audio bestand af met <source> tag. Leg uit wat hier het voordeel van is.
+
+Door het gebruik van <source> heb je de mogelijkheid om meerdere bronnen toe te voegen, zodat je een grotere kans hebt dat de browser je bestandstype herkent en kan afspelen.
+
+
+
+Zoek een willekeurig video en sla dit op in je computer. Laadt dit bestand in als een video op het scherm.
+
+Voor het aanpassen van de grootte van het scherm heb ik een width en height ingesteld in het video element. 
+
+Tip: De video is veel groter dan het scherm. Zoek uit welke attribuut je voor de video element kan gebruiken om de grootte van de video aan te passen.
+
+
+Een video bestand heeft verschillende formaten. Niet alle formaten worden ondersteund door de browser. Hiervoor is een oplossing voor. 
+
+Speel een video bestand af met <source> tag. Leg uit wat hier het voordeel van is.
+Door het gebruik van <source> heb je de mogelijkheid om meerdere bronnen toe te voegen, zodat je een grotere kans hebt dat de browser je bestandstype herkent en kan afspelen.
+
+
+Lijsten
+
+
+Door gebruik te maken van lijsten in HTML kan je opsommingen eenvoudig weergeven. Onderzoek de verschillende soorten lijsten en op welke wijze je deze kunt toepassen.
+
+Maak gebruik van de verschillende soorten lijsten om het volgende resultaat op je webpagina weer te geven.
+
+
+Bouw een navigatiebalk door gebruik te maken uit een lijst dat bestaat uit de volgende onderdelen:
+Tigers
+Lions
+Monkeys
+Hippopotaumus
+
+Creëer nu voor elk onderdeel een header en een bijbehorende stuk tekst en zorg ervoor dat door te klikken op de links in de navigatiebalk je gerefereerd wordt naar het bijbehorende onderdeel. Zie hieronder een voorbeeld:

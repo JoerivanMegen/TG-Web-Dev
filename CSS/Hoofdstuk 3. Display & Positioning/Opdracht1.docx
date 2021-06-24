@@ -1,0 +1,30 @@
+Opdracht 1
+Welke position values zijn er? Leg voor elke position values uit wat het doet. 
+Geef ook aan welke default position waarde elementen hebben die je gebruikt in html.
+
+Position properties geven aan welke methode van positioneren wordt gebruit bij het plaatsen van een element.
+Elementen kunnen ook verder verplaatst worden door middel van margins of properties top, left, bottom en right.
+Hiervoor moet echter in eerste 
+Er zijn 5 verschillende position values:
+
+static:
+    Alle HTML elementen hebben standaard static positioning. In principe wordt het element hiermee in de normale flow van het document geplaatst.
+    Dit is over het algemeen aan de linkerkant van de pagina, onder het voorgaande element.
+
+relative:
+    Met relative positioning wordt een element relatief aan zijn huidige positie verplaatst aan de hand van top, bottom, left, right.
+    Andere content wordt niet standaard in de open plaats geplaatst.
+
+fixed:
+    De fixed positioning wordt aangepast aan de hand van de viewport (device width/height).
+    Hierna is het mogelijk om met top, left, bottom en right de positie aan te passen.
+
+absolute:
+    Een element met position absolute is gerelateerd aan het element waarin dit element verkeert. 
+    Als het niet in een element is geplaatst, is het element geplaatst op basis van het gehele document.
+
+sticky:
+    Sticky is een vorm van positioning die gebaseerd is op de user's scroll positie.
+    Het element zal tussen relative en fixed verkeren.
+    Dat betekent dat het element gewoon op de pagina geplaatst zal zijn zoals bij relative, 
+    maar zodra de gebruiker langs het element scrollt, beweegt deze mee.

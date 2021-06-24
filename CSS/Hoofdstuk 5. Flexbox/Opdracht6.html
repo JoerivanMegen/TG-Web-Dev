@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            display: flex;
+            background-color: rgb(255, 255, 189);
+            padding-top: 20px;
+            padding-bottom: 20px;
+            justify-content: flex-start;
+            flex-direction: column;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 700px;
+        }
+        .flex-container > div{
+            background-color: rgb(177, 164, 226);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            left: 0;
+        }
+        .item-1{
+            width: 100%;
+        }
+        .item-2{
+            width: 40%;
+        }
+        .item-3{
+            width: 50%;
+        }
+        .item-4{
+            width: 60%;
+        }
+        .item-5{
+            width: 25%;
+        }
+        .item-6{
+            width: 35%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item-1"></div>
+        <div class="item-2"></div>
+        <div class="item-3"></div>
+        <div class="item-4"></div>
+        <div class="item-5"></div>
+        <div class="item-6"></div>
+    </div>
+</body>
+</html>

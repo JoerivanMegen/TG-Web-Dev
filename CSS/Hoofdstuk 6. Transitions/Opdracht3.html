@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 800px;
+            height: 403px;
+            border: 1px solid black;
+            position: relative;
+        }
+        .box{
+            width: 75px;
+            height: 75px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 3px;
+            background-color: rgb(231, 231, 231);
+            transition-property: background-color transform border-radius;
+        }
+        .one{
+            transition: all 2s ease;
+        }
+        .two{
+            transition: all 2s ease-in;
+        }
+        .three{
+            transition: all 2s ease-out;
+        }
+        .four{
+            background-color: rgb(248, 248, 248);
+            transition: all 2s ease-in-out;
+        }
+        .five{
+            transition: all 2s cubic-bezier(0.5, 1, 0.3, -0.9);
+        }
+        .container:hover .one{
+            transition-timing-function: ease;
+            background-color: red;
+            border-radius: 50%;
+            transform: translateX(718px);
+        }
+        .container:hover .two{
+            transition-timing-function: ease-in;
+            border-radius: 20%;
+            background-color: red;
+            transform:translateX(718px);
+        }
+        .container:hover .three{
+            transition-timing-function: ease-out;
+            background-color: red;
+            transform:translateX(718px);
+        }
+        .container:hover .four{
+            transition-timing-function: ease-in-out;
+            background-color: red;
+            transform: translateX(718px);
+        }
+        .container:hover .five{
+            transition-timing-function: cubic-bezier(0.5, 1, 0.3, -0.9);
+            background-color: red;
+            transform: translateX(718px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box one">1</div>
+        <div class="box two">2</div>
+        <div class="box three">3</div>
+        <div class="box four">4</div>
+        <div class="box five">5</div>
+    </div>
+</body>
+</html>

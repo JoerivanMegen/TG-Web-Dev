@@ -1,0 +1,11 @@
+.class{
+    font: message-box;
+}
+.ind{
+    color: pink;
+    background-color: royalblue;
+}
+h2 + span{
+    background-color: red;
+    color: white;
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="Achternaam">Achternaam: </label>
+        <input type="text" placeholder="Achternaam"><br><br>
+        <label for="Voornaam">Voornaam: </label>
+        <input type="text" placeholder="Voornaam"><br><br>
+        <input type="submit">
+    </form><br><br>
+    <form>
+        <input type="email"><br><br>
+        <input type="submit">
+    </form>
+    <br><br>
+<div style="background: rgb(206, 206, 206); width: 400px;">
+    
+    <form title="Persoonsgegevens">
+        <fieldset>
+        <legend>Persoonsgegevens</legend><br><br>
+        <label for="Achternaam">Achternaam: </label>
+        <input type="text" placeholder="Achternaam"><br><br>
+        <label for="Voornaam">Voornaam: </label>
+        <input type="text" placeholder="Voornaam"><br><br>
+        <label for="Geboortedatum">Geboortedatum: </label>
+        <input type="date"><br><br>
+        <label for="Man">M: </label>
+        <input type="radio" id="Man" name="Gender" value="Man">
+        <label for="Vrouw">V: </label>
+        <input type="radio" id="Vrouw" name="Gender" value="Vrouw"><br><br>
+        <label for="Postcode">Postcode: </label>
+        <input type="text" placeholder="Postcode"><br><br>
+        <label for="Adres">Adres: </label>
+        <input type="text" placeholder="Adres"><br><br>
+    </fieldset>
+    </form>
+    <input type="submit">
+    <input type="reset">
+</div>
+<br><br><br>
+<div>
+    <label for="cars">Choose your favourite car: </label><br><br>
+    <select name="cars" id="cars">
+        <option value="ferrari">Ferrari</option>
+        <option value="honda">Honda</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="toyota">Toyota</option>
+    </select>
+</div>
+<br><br><br>
+<form style="width: 430px;background: lightgoldenrodyellow;">
+    <Fieldset>
+        <Legend>Reservingsformulier</Legend>
+        <label for="Achternaam"> Achternaam: </label>
+        <input type="text" placeholder="Achternaam"><br><br>
+        <label for="Voornaam">Voornaam: </label>
+        <input type="text" placeholder="Voornaam"><br><br>
+        <label for="Abonnement">Heeft u een abonnement? </label>
+        <select name="Abonnement" id="Abonnement">
+            <option value="Ja">Ja</option>
+            <option value="Nee">Nee</option>
+        </select><br><br>
+        <label for="email">E-mailadres: </label>
+        <input type="email" placeholder="blabla123@gmail.com"><br><br>
+        <label for="sport">Welke sport wilt u beoefenen? </label>
+        <select name="sport" id="sport">
+            <option value="Tafeltennis">Tafeltennis</option>
+            <option value="Squash">Squash</option>
+            <option value="badminton">Badminton</option>
+        </select><br><br>
+        <label for="datumtijd">Wanneer wilt u sporten? </label>
+        <input type="datetime-local"><br><br>
+        <label for="akkoord">Ik ga akkoord met de <a href="https://hoihoi.com">voorwaarden</a>: </label>
+        <input type="checkbox" required> 
+    </Fieldset>
+    <input type="submit" style="margin-left: 5px;">
+    <input type="reset">
+</form>
+<br><br><br>
+<form style="width: 500px; background: rgb(175, 187, 255);">
+    <fieldset>
+        <legend>Een Boek Reserveren</legend><br>
+        <label for="voor- en achternaam">Voor- en Achternaam: </label>
+        <input type="text"><br><br>
+        <label for="phone">Telefoonnummer: </label>
+        <input type="tel" id="phone" name="phone" pattern="06-[0-9]{8}" required>
+        <small>bv: 06-12345678</small><br><br>
+        <label for="e-mailadres">E-mailadres: </label>
+        <input type="email" placeholder="blabla123@gmail.com"><br><br>
+        <label for="aantal">Hoeveel boeken wilt u lenen?</label>
+        <select name="boeken" id="aantal boeken">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br><br>
+        <label for="boek">Boektitel(s): </label>
+        <input type="text" placeholder="Boektitel(s)">
+        <small>Scheid meerdere titels met een komma.</small>
+        <br><br>
+    </fieldset>
+    <input type="submit">
+    <input type="reset">
+</form>
+<br><br><br>
+<table style="background: lightsteelblue;">
+    <thead>
+        <th>Voornaam</th>
+        <th>Achternaam</th>
+        <th>Leeftijd</th>
+        <th>Telefoonnummer</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>41</td>
+            <td>+31637482938</td>
+        </tr>
+        <tr>
+            <td>Steven</td>
+            <td>Smith</td>
+            <td>32</td>
+            <td>+31637482938</td>
+        </tr>
+        <tr>
+            <td>Alex</td>
+            <td>Beave</td>
+            <td>16</td>
+            <td>+31637482938</td>
+        </tr>
+    </tbody>
+</table>
+<br><br><br>
+<table style="background: mintcream;">
+    <thead>
+        <th>Ma</th>
+        <th>Di</th>
+        <th>Wo</th>
+        <th>Do</th>
+        <th>Vr</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Afspraak met Tandarts</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Sporten</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Huiswerk maken</td>
+            <td>Werken</td>
+            <td>Werken</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Afspraak met Tandarts</td>
+            <td></td>
+            <td></td>
+            <td>Werken</td>
+            <td>Bij vrienden</td>
+        </tr>
+    </tbody>
+</table>
+<br><br><br>
+<table>
+    <thead>
+        <th></th>
+        <th></th>
+        <th>Sport</th>
+        <th>Aantal Recreanten</th>
+        <th>Aantal Competitie Spelers</th>
+        <th>Totale Deelnemers</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+            <TD></TD>
+            <td>Badminton</td>
+            <td>10</td>
+            <td>30</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td colspan="2">Racket sport</td>
+            <td>Tafeltennis</td>
+            <td>59</td>
+            <td>30</td>
+            <td>89</td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td>Tennis</td>
+            <td>159</td>
+            <td>130</td>
+            <td>189</td>
+        </tr>
+        <tr>
+            <td>Tennis</td>
+            <td>159</td>
+            <td>130</td>
+            <td colspan="3">189</td>
+        </tr>
+        <tr>
+            <td rowspan="3" colspan="2">Balsport</td>
+            <td>Voetbal</td>
+            <td>88</td>
+            <td>40</td>
+            <td>128</td>
+        </tr>
+        <tr>
+            <td>Basketball</td>
+            <td>60</td>
+            <td>40</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Volleyball</td>
+            <td>35</td>
+            <td>20</td>
+            <td>55</td>
+        </tr>
+    </tbody>
+
+</table>
+</body>
+</html>

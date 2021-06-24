@@ -1,0 +1,33 @@
+Cascade en Inheritance.
+
+Het principe Cascade is van extreem belang wanneer een element in twee identieke CSS regels als selector is gekozen.
+Cascade bepaalt dan welke van de regels wordt toegepast aan het element.
+
+In het geval van een identieke rule met een verschillende waarde, wordt volgens het begrip van Cascade de laatste waarde toegepast.
+
+Stel dit is je code:
+h1{
+    color:blue;
+}
+h1{
+    color:green;
+}
+
+In dit geval wordt h1 aangetoond met een groene kleur. Volgens het principe van cascading, wordt de laatste waarde toegepast. In dit geval: color:green;.
+
+Er is echter nog een sterkere band tussen CSS en je html element. Dit is namelijke de specificatie.
+Wanneer een selector op meerdere manieren kan worden aangeduid, en zo twee identieke CSS waarden zijn toegekend, telt de meest specifieke regel.
+
+Stel h1 en .main-heading verwijzen naar hetzelfde element en dit is je code:
+h1{
+    color:blue;
+}
+.main-heading{
+    color:green;
+}
+
+De tekst gaat in het groen getoond worden. Een class selector is namelijk altijd specifieker dan een element selector.
+De class selector verwijst namelijk maar naar een mogelijk(e string van) element(en).
+Een element selector kan naar meerdere elementen verwijzen over de gehele pagina.
+
+Inheritance betekent dat alle elementen binnen het opgemaakte element dezelfde opmaak krijgen, tenzij het element specifieke individuele opmaak heeft gekregen.

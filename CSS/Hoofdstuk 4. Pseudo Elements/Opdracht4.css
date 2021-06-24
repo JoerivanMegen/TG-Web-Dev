@@ -1,0 +1,55 @@
+.btn{
+    background-color: rgb(18, 139, 139);
+    width: 500px;
+    height: 50px;
+    position: relative;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    top: 5px;
+}
+h1{
+    position: relative;
+    top: 5px;
+}
+/* Left Line vertical */
+.btnlefttop::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(211, 102, 0);
+    width: 7px;
+    height: 100%;
+    top: 0;
+    left: 0px;
+}
+/* Top Line horizontal */
+.btnlefttop::after {
+    content: '';
+    position: absolute;
+    background-color: rgb(211, 102, 0);
+    width: 50px;
+    height: 7px;
+    top: 0;
+    left: 0px;
+}
+/* Bottom Line horizontal */
+.btnbottomright::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(211, 102, 0);
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+    right: 0px;
+}
+/* Right Line vertical */
+.btnbottomright::after {
+    content: '';
+    position: absolute;
+    background-color: rgb(211, 102, 0);
+    width: 7px;
+    height: 100%;
+    top: 0;
+    right: 0px;
+}

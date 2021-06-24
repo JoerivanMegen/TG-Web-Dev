@@ -1,0 +1,141 @@
+.container{
+    position: relative;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.ballset1{
+    display: block;
+}
+.ball1{
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    left: 100px;
+    text-align: center;
+}
+h1{
+    color: white;
+    position: absolute;
+    left: 44%;
+    top: 22%;
+}
+.ball1::before{
+    content: '.';
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-weight:900;
+    background-size: 100% 100%;
+    float: left;
+    position: relative;
+    right: 30px;
+    border-radius: 50%;
+    text-align: center;
+    top: 30%;
+    transform:rotate(30deg);
+}
+.ball1::after{
+    content: '.';
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-weight:900;
+    background-size: 100% 100%;
+    float: right;
+    position: relative;
+    left: 30px;
+    border-radius: 50%;
+    text-align: center;
+    top: 30%;
+    transform:rotate(210deg);
+}
+.ballset2{
+    position: absolute;
+    left: 300px;
+}
+.ball2{
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50px;
+    text-align: center;
+}
+.ball2::before{
+    content: '.';
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-weight:900;
+    background-size: 100% 100%;
+    float: left;
+    position: relative;
+    right: 30px;
+    border-radius: 50%;
+    text-align: center;
+    top: 30%;
+    transform: rotate(30deg);
+}
+.ball2::after{
+    content: '.';
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-weight:900;
+    background-size: 100% 100%;
+    float: right;
+    position: relative;
+    left: 30px;
+    border-radius: 50%;
+    text-align: center;
+    top: 30%;
+    transform:rotate(210deg);
+}
+.ball3{
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    left: 600px;
+    text-align: center;
+}
+.ball3::before{
+    content: '.';
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-weight:900;
+    background-size: 100% 100%;
+    float: left;
+    position: relative;
+    right: 30px;
+    border-radius: 50%;
+    text-align: center;
+    top: 30%;
+    transform: rotate(30deg);
+}
+.ball3::after{
+    content: '.';
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-weight:900;
+    background-size: 100% 100%;
+    float: right;
+    position: relative;
+    left: 30px;
+    border-radius: 50%;
+    text-align: center;
+    top: 30%;
+    transform:rotate(210deg);
+}

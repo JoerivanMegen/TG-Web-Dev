@@ -1,0 +1,31 @@
+.firstline > p::first-line{
+    background-color: dodgerblue;
+    color: white;
+}
+.firstletter > p::first-letter{
+    background-color: teal;
+    color: white;
+}
+.bfrftr > h2::before{
+    content: "";
+    background-size: 30px 20px;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    background-image: url(./Assets/testing.png);
+}
+.bfrftr > h2::after{
+    content: "";
+    background-size: 30px 20px;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    background-image: url(./Assets/testing.png);   
+}
+::marker{
+    color: teal;
+}
+.selection ::selection{
+    background: forestgreen;
+    color: white;
+}

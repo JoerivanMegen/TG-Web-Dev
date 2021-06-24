@@ -1,0 +1,15 @@
+@mixin buttonshape{
+    width: 150px;
+    height: 100px;
+    transition-property: all  ease;
+    transition-duration: 2s;
+}
+@mixin buttonTrans {
+    background-color: $primary-color;
+    color: $secondary-color;
+    &:hover{
+        background-color: $secondary-color;
+        color: $primary-color;
+        transition-duration: 2s;
+    }
+}

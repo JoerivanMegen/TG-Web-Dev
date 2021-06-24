@@ -1,0 +1,26 @@
+img{
+    width: 600px;
+    position: absolute;
+}
+.txtcon{
+    position: relative;
+    bottom: 20px;
+    left: 250px;
+    text-align: right;
+}
+h1{
+    color: firebrick;
+}
+span{
+    color: white;
+}
+.vakantie{
+    position: relative;
+    bottom: 20px;
+    color: firebrick;
+    text-align: center;
+    left: 30px;
+}
+.container{
+    position: absolute;
+}

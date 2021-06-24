@@ -1,0 +1,15 @@
+@import './assets/button';
+@import './assets/variables';
+
+.button{
+    @include buttonshape;
+    @include buttonTrans;
+}
+
+.colorChangingSquare{
+    @include buttonshape;
+    @include buttonTrans;
+}
+ .image{
+     @include imagecheck
+ }

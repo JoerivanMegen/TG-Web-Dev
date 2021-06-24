@@ -1,0 +1,7 @@
+Opdracht 1
+Zoek uit wat transitions zijn en beschrijf met eigen woorden wat het betekent.
+
+Transitions zorgen ervoor dat je bepaalde elementen in je pagina kunt animeren.
+In andere woorden, je kunt ervoor zorgen dat je element naar een andere staat verandert. 
+Dit kan te maken hebben met de vorm, positie, kleur of andere aspecten van het element.
+Dit doe je door de selector te specificeren en vervolgens de juiste properties toe te voegen.

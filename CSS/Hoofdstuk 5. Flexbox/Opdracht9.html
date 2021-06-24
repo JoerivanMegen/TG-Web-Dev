@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            font: message-box;
+        }
+        .flex-container{
+            display: flex;
+            justify-content: space-evenly;
+            width: 1150px;
+            background-color: rgb(228, 228, 228);
+        }
+        .flex-container > div{
+            background-color: white;
+            margin: 10px;
+            text-align: center;
+            max-width: 250px;
+        }
+        div > img{
+            width: 250px;
+            height: 250px;
+            border-radius: 10%;
+        }
+        h3{
+            color: blue;
+        }
+        button{
+            width: 250px;
+            height: 50px;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border: none;
+        }
+        .button1 :hover{
+            background-color: yellow;
+            color: black;
+        }
+        .button2 :hover{
+            background-color: pink;
+            color: black;
+        }
+        .button3 :hover{
+            background-color: mediumaquamarine;
+            color: black;
+        }
+        .button4 :hover{
+            background-color: rgb(161, 92, 59);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flex-container">
+            <div class="game1">
+                <img src="./Assets/sponge.png" alt="Spongebob Squarepants">
+                <h3>Spongebob Squarepants</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, necessitatibus!</p>
+                <div class="button1"><button><strong>Play as Spongebob!</strong></button></div>
+            </div>
+            <div class="game2">
+                <img src="./Assets/patrick.png" alt="Patrick Star">
+                <h3>Patrick Star</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, necessitatibus!</p>
+                <div class="button2"><button><strong>Play as Patrick!</strong></button></div>
+            </div>
+            <div class="game3">
+                <img src="./Assets/squidward.gif" alt="Squidward">
+                <h3>Squidward</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, necessitatibus!</p>
+                <div  class="button3"><button><strong>Play as Squidward!</strong></button></div>
+            </div>
+            <div class="game4">
+                <img src="./Assets/sandy.png" alt="Sandy Cheeks">
+                <h3>Sandy Cheeks</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, necessitatibus!</p>
+                <div class="button4">
+                <button><strong>Play as Sandy!</strong></button></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

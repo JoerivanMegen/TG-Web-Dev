@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Opdracht123.css">
+</head>
+
+<body>
+    <h1>Opdracht 3</h1>
+    <p>Er zijn aldus 14 verschillende pseudo elementen. Je hebt ze in de voorgaande opdracht reeds opgezocht en
+        uitgezocht wat ze doen. <br>
+        Kun je van al deze pseudo-elementen een voorbeeld maken?</p>
+
+    <div class="firstline">
+        <h2>::first-line</h2>
+        <p>Het pseudo-element ::first-line zorgt ervoor dat je de eerste regel in je content onafhankelijk van de rest
+            van je styling kunt aanpassen. <br>
+            Een voorbeeld daarvan kun je al in deze alinea zien. <br>
+            Als alles goed is gegaan zal de eerste regel van deze alinea een blauwe achtergrond hebben en witte letters.
+            <br>
+            Deze aanpassing is gemaakt met deze CSS values: <br><br>.firstline > p::first-line{<br>
+            background-color: dodgerblue;<br>
+            color: white;<br>
+            } <br>
+            <p>Dit zijn de mogelijke properties voor het ::first-line element: </p><br>
+            font properties <br>
+            color properties <br>
+            background properties <br>
+            word-spacing <br>
+            letter-spacing <br>
+            text-decoration <br>
+            vertical-align <br>
+            text-transform <br>
+            line-height <br>
+            clear <br>
+        </p>
+    </div>
+    <br><br>
+    <div class="firstletter">
+        <h2>::first-letter</h2>
+        <p>
+            Het first letter element zorgt ervoor dat de eerste letter in de aangewezen selectors een individuele opmaak
+            ontvangt.
+        </p>
+        <p>
+            In deze alinea voeg ik meerdere p elementen toe om aan te tonen hoe het effect van dit pseudo-element eruit
+            ziet.
+        </p>
+        <p>
+            Note: <br>
+            Dit element kan alleen op block elementen geïmplementeerd worden.
+        </p>
+        <p>
+            Dit zijn de properties waarop ::first-letter van toepassing is: <br>
+            font properties <br>
+            color properties <br>
+            background properties <br>
+            margin properties <br>
+            padding properties <br>
+            border properties <br>
+            text-decoration <br>
+            vertical-align (alleen als 'float' 'none' is) <br>
+            text-transform <br>
+            line-height <br>
+            float <br>
+            clear <br>
+        </p>
+
+    </div>
+    <div class="bfrftr">
+        <h2>::before en ::after</h2>
+        <p>Deze twee elementen voeg ik even samen voor het gemak, aangezien beide elementen aardig veel op elkaar lijken.</p>
+        <p>Met deze elementen kun je namelijk een element toevoegen voor en na een html-element. </p>
+        <p>Zo is er een afbeelding voor en na de titel toegevoegd van deze alinea.</p>
+
+    </div>
+    <div>
+        <h2>::marker</h2>
+        <p>Het marker element kan de kleuren van opsommingstekens kleuren.<br>
+        Hieronder volgt een voorbeeld:</p>
+        <ul>
+            <li>Dit</li>
+            <li>Is</li>
+            <li>Een</li>
+            <li>Lijst</li>
+        </ul>
+    </div>
+    <div class="selection">
+        <h2>::selection</h2>
+        <p>Het selection element kan de opmaak aanpassen wanneer je een stuk tekst/content selecteert. <br>
+        Als je probeert een stuk tekst in deze alinea te selecteren, zul je zien dat de kleur van het geselecteerde stuk tekst groen gemarkeerd wordt en de tekst wit wordt.</p>
+    </div>
+</body>
+
+</html>

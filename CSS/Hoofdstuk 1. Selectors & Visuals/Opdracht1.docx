@@ -1,0 +1,7 @@
+Opdracht 1
+Je kunt op 3 verschillende manieren CSS in je HTML inladen. Op welke 3 manieren kun je dat doen? Leg ook voor elke wijze uit wat het precies inhoud.
+
+- Inline - Opmaak kan direct aan een element toegevoegd worden door middel van een 'style' attribuut in de opening tag van een element.
+- Internal - Opmaakelementen kunnen toegevoegd in de 'head' van het HTML bestand. Dit is mogelijk door middel van een <style> element in de 'head'.
+- External - Een extern CSS-document kan aan de html toegevoegd worden dmv van een stylesheet. Dit is mogelijk met een <link> element.
+

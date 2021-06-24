@@ -1,0 +1,13 @@
+Opdracht 7
+Maak nu een blok met width: 100px, height: 100px, margin: 5px, padding 5px en border-width: 5px. Zie hieronder:
+
+
+1. Hoe breed is de box?
+De box is (100+5+5+5=)115px breed.
+
+2. Hoe hoog is de box?
+De box is (100+5+5+5=)115px hoog.
+
+3. Wat merk je op met width en height?
+Het valt mij op dat de aangegeven height and width van de box in CSS slechts refereert naar de content, maar niet naar de gehele box.
+

@@ -1,0 +1,12 @@
+@import './variables';
+
+
+.button{
+    border: none;
+    background-color: transparent;
+    position: relative;
+    color: $arrow-color;
+    margin: auto;
+    font-weight: bold;
+    transition: .5s;
+}
