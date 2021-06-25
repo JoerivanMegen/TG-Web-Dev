@@ -1,14 +1,3 @@
-.button {
-  border: none;
-  background-color: transparent;
-  position: relative;
-  color: #272727;
-  margin: auto;
-  font-weight: bold;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -18,29 +7,28 @@ body {
 
 .carousel-container {
   width: 80%;
-  margin: auto;
   position: relative;
-  border-radius: 4%/6%;
+  height: 50vw;
   overflow: hidden;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  border-radius: 4%/6%;
+  margin: auto;
 }
 
-.carousel-container__images {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transition: -webkit-transform 2s;
-  transition: -webkit-transform 2s;
-  transition: transform 2s;
-  transition: transform 2s, -webkit-transform 2s;
-}
-
-.carousel-container__images img {
+.carousel-container .slide {
+  position: absolute;
   width: 100%;
+  z-index: 100;
+}
+
+.carousel-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  pointer-events: none;
+}
+
+.carousel-container .active {
+  z-index: 500;
 }
 
 .carousel-container .panel {
@@ -51,19 +39,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0;
   -webkit-transition: .5s;
   transition: .5s;
+  z-index: 1000;
 }
 
 .carousel-container .panel.right {
   right: 0;
-  z-index: 2;
 }
 
 .carousel-container .panel.left {
   left: 0;
-  z-index: 2;
 }
 
 .carousel-container .panel:hover {
@@ -74,7 +60,82 @@ body {
 
 .carousel-container .panel:hover .button {
   color: #c8c8c8;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+}
+
+.carousel-container .panel .button {
+  border: none;
+  background-color: transparent;
+  position: relative;
+  color: #272727;
+  margin: auto;
+  font-weight: bold;
+  -webkit-transition: .5s all ease;
+  transition: .5s all ease;
+}
+
+.slideInLeft {
+  -webkit-animation-name: animateInLeft;
+          animation-name: animateInLeft;
+  z-index: 1000;
+}
+
+.slideInRight {
+  -webkit-animation-name: animateInRight;
+          animation-name: animateInRight;
+  z-index: 1000;
+}
+
+.slideOutLeft {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.slideOutRight {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+@-webkit-keyframes animateInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes animateInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes animateInRight {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes animateInRight {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
 }
 /*# sourceMappingURL=Carousel.css.map */

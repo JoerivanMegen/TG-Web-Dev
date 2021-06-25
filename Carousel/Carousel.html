@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Carousel.css">
-    <script src="./Carousel.js"></script>
+    <script src="Carousel.js"></script>
 </head>
 
 <body>
@@ -15,21 +15,19 @@
     <h1 style="text-align: center; font: xx-large message-box;">The Carousel</h1>
     <br>
     <!-- HTML Carousel Containers -->
-    <div class="carousel-container">  
+    <div class="carousel-container">
         <div class="panel right">
-            <button class="button next">&#10095;
+            <button id="next" class="button next">&#10095;
             </button>
         </div>
         <div class="panel left">
-            <button class="button previous">
+            <button id="previous" class="button previous">
                 &#10094;
             </button>
         </div>
-        <div class="carousel-container__images">
-            <img src="./Assets/Media/image1.jpg" alt="" class="slide">
-            <img src="./Assets/Media/image2.jpg" alt="" class="slide">
-            <img src="./Assets/Media/image3.jpg" alt="" class="slide">
-        </div>     
+        <div class="slide"><img src="./Assets/Media/image1.jpg" alt=""></div>
+        <div class="slide active"><img src="./Assets/Media/image2.jpg" alt=""></div>
+        <div class="slide"><img src="./Assets/Media/image3.jpg" alt=""></div>
     </div>
     <br>
     <br>

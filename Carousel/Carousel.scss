@@ -1,8 +1,6 @@
 @import './Assets/variables';
 @import './Assets/buttons';
 
-
-
 body{
     box-sizing: border-box;
     margin: 0;
@@ -11,18 +9,24 @@ body{
 
 .carousel-container{
     width: 80%;
-    margin: auto;
     position: relative;
-    border-radius: 4%/6% ;
+    height: 50vw;
     overflow: hidden;
-    align-items: center;
-    &__images{
-        display: flex;
-        transform: translateX(0);
-        transition: transform 2s;
-        img{
+    border-radius: 4%/6% ;
+    margin: auto;
+    .slide{
+            position: absolute;
             width: 100%;
-        }
+            z-index: 100;
+    }
+    img{
+            object-fit: cover;
+            width: 100%;
+            pointer-events: none;
+    }
+
+    .active{
+        z-index: 500;
     }
     .panel{
         position: absolute;
@@ -30,24 +34,65 @@ body{
         height: 100%;
         width: 5%;
         display: flex;  
-        padding: 0;
         transition: .5s;
+        z-index: 1000;
         // transition-property: all .5s ease;
         &.right{
         right: 0;
-        z-index: 2;
         }
         &.left{
         left: 0;
-        z-index: 2;
         }
         &:hover{
             background-color: $panel-hover;
             transition: 0.7s;
             .button{
                 color: $arrow-hover;
-                transition: 0.3s;
             }
+        }
+        .button{
+            border: none;
+            background-color: transparent;
+            position: relative;
+            color: $arrow-color;
+            margin: auto;
+            font-weight: bold;
+            transition: .5s all ease;
         }
     }
 }
+.slideInLeft {
+    animation-name: animateInLeft;
+    z-index: 1000;
+  }
+  
+  .slideInRight {
+    animation-name: animateInRight;
+    z-index: 1000;
+  }
+  
+  .slideOutLeft {
+    transform: translateX(-100%);
+  }
+  
+  .slideOutRight {
+    transform: translateX(100%);
+  }
+  
+  @keyframes animateInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  @keyframes animateInRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
