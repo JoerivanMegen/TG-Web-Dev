@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: "roboto condensed", sans-serif;
+}
+
+h1{
+    position: relative;
+    text-align: center;
+}
+
+.stopwatch{
+    width: 50vw;
+    height: 50vw;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom left, rgb(104, 104, 104), rgb(151, 151, 151));
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-shadow: 0 0 20px 2px rgb(0, 0, 0);
+    }
+
+.inside-stopwatch{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 5%;
+    margin-top: 5%;
+    border-radius: 50%;
+}
+.title{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 10%;
+    font-size: 5vw;
+}
+
+.knoppen-container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 30%;
+}
+
+.button{
+    border-radius: 50%;
+    width: 9vw;
+    height: 9vw;
+    margin: 2px;
+}
+.start{
+    background-color: green;
+    border:1px solid greenyellow;
+    color: whitesmoke;
+}
+.start:hover{
+    background-color: rgb(0, 90, 0);
+}
+
+.stop{
+    background-color: rgb(216, 216, 0);
+    border: 1px solid yellow;
+    color: rgb(41, 41, 41);
+}
+.stop:hover{
+    background-color: rgb(148, 148, 0);
+    color: whitesmoke;
+}
+.reset{
+    background-color: rgb(155, 0, 0);
+    border: 1px solid red;
+    color: whitesmoke;
+}
+.reset:hover{
+    background-color: rgb(104, 0, 0);
+}
+.timer{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 11vw;
+    font-size: 6vw;
+    background-color: rgb(25, 34, 25);
+    width: 30vw;
+    margin: auto;
+    border-radius: 3%/10%;
+    color: rgb(201, 201, 201);
+}
+.timer span{
+    display: inline-block;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 540px){
+    .if-small{
+        display: none;
+    }
+}

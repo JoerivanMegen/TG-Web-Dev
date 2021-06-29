@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Stopwatch.css">
+    <script src="./Stopwatch.js"></script>
+</head>
+<body>
+    <h1>The Stopwatch</h1>
+    <div class="stopwatch">
+        <div class="inside-stopwatch">
+            <div class="title"><h2>SKMEI</h2></div>
+            <div class="timer"><p>
+                <span class="minutes">
+                    00
+                </span>:<span class="seconds">
+                    00
+                </span>:<span class="centiseconds">
+                    00
+                </span></p>
+            </div>
+            <div class="knoppen-container">
+                <button onclick="startStopwatch()" class="button start"><span class="if-small">START</span></button>
+                <button onclick="stopStopwatch()" class="button stop"><span class="if-small">STOP</span></button>
+                <button onclick="reset()" class="button reset"><span class="if-small">RESET</span></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
