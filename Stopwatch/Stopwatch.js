@@ -73,8 +73,8 @@ function reset(){
     centiSeconds = 0;
     seconds = 0;
     minutes = 0;
-    document.querySelector(".timer .centiseconds").innerHTML = displayCenti;
-    document.querySelector(".timer .seconds").innerHTML = displaySeconds;
-    document.querySelector(".timer .minutes").innerHTML = displayMinutes;
+    document.querySelector(".timer .centiseconds").innerHTML = "00";
+    document.querySelector(".timer .seconds").innerHTML = "00";
+    document.querySelector(".timer .minutes").innerHTML = "00";
     status = "stopped";
 }

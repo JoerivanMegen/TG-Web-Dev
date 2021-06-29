@@ -8,7 +8,6 @@ html{
 }
 
 h1{
-    position: relative;
     text-align: center;
 }
 
@@ -32,25 +31,27 @@ h1{
     margin-top: 5%;
     border-radius: 50%;
 }
-.title{
-    display: flex;
+.title img{
+    width: 20vw;
     position: relative;
-    justify-content: center;
-    top: 10%;
-    font-size: 5vw;
+    padding: 0;
+    margin: 0 auto;
+    height: 10vw;
+    left: 25%;
+    top: 4vw;
 }
 
 .knoppen-container{
     display: flex;
     position: relative;
     justify-content: center;
-    top: 30%;
+    top: 25%;
 }
 
 .button{
     border-radius: 50%;
-    width: 9vw;
-    height: 9vw;
+    width: 8vw;
+    height: 8vw;
     margin: 2px;
 }
 .start{
@@ -84,7 +85,7 @@ h1{
     position: relative;
     align-items: center;
     justify-content: center;
-    top: 11vw;
+    top: 9vw;
     font-size: 6vw;
     background-color: rgb(25, 34, 25);
     width: 30vw;
@@ -98,7 +99,7 @@ h1{
 }
 
 
-@media only screen and (max-width: 540px){
+@media only screen and (max-width: 560px){
     .if-small{
         display: none;
     }
