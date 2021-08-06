@@ -1,0 +1,26 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/Weather App React/weather-app/node_modules
+/Weather App React/weather-app/.pnp
+/Weather App React/weather-app/.pnp.js
+
+# testing
+/Weather App React/weather-app/coverage
+
+# production
+/Weather App React/weather-app/build
+
+# misc
+/Weather App React/weather-app/.DS_Store
+/Weather App React/weather-app/.env.local
+/Weather App React/weather-app/.env.development.local
+/Weather App React/weather-app/.env.test.local
+/Weather App React/weather-app/.env.production.local
+
+/Weather App React/weather-app/npm-debug.log*
+/Weather App React/weather-app/yarn-debug.log*
+/Weather App React/weather-app/yarn-error.log*
+
+# API Information
+/Weather App React/weather-app/.env
